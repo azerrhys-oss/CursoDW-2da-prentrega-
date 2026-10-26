@@ -1,13 +1,4 @@
-/* ==========================================================
-   Alexander Zerr | Seguridad e Higiene
-   Hoja de estilos principal
-   ========================================================== */
-
-
 /* ---------- Variables y paleta de colores ---------- */
-/* Primario: azul petróleo (confianza, entorno industrial)
-   Secundario: gris azulado claro (fondos de apoyo)
-   Acento: amarillo de señalización de seguridad (elementos destacados) */
 
 :root {
     --color-primary: #1f3a4d;
@@ -21,7 +12,6 @@
 
 
 /* ---------- Tipografía y estilos generales ---------- */
-/* Montserrat para los títulos y Roboto para el texto (máximo dos familias). */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -86,8 +76,6 @@ a {
     color: var(--color-primary);
 }
 
-/* Página actual del menú: al estar escrita después de .menu-enlace
-   y tener la misma especificidad, la cascada aplica este color. */
 .activo {
     color: var(--color-text);
     background-color: var(--color-accent);
