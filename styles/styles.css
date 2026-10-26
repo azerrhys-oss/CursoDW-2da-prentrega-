@@ -1,0 +1,149 @@
+/* ==========================================================
+   Alexander Zerr | Seguridad e Higiene
+   Hoja de estilos principal
+   ========================================================== */
+
+
+/* ---------- Variables y paleta de colores ---------- */
+/* Primario: azul petróleo (confianza, entorno industrial)
+   Secundario: gris azulado claro (fondos de apoyo)
+   Acento: amarillo de señalización de seguridad (elementos destacados) */
+
+:root {
+    --color-primary: #1f3a4d;
+    --color-secondary: #e8eef2;
+    --color-accent: #f2b705;
+    --color-text: #1e2a33;
+    --color-background: #f7f9fb;
+    --color-white: #ffffff;
+    --color-muted: rgb(81, 96, 107);
+}
+
+
+/* ---------- Tipografía y estilos generales ---------- */
+/* Montserrat para los títulos y Roboto para el texto (máximo dos familias). */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-background);
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-primary);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+p,
+li {
+    font-size: 1rem;
+}
+
+a {
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+
+/* ---------- Encabezado y navegación ---------- */
+
+.encabezado {
+    background-color: var(--color-white);
+}
+
+.marca {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.menu {
+    background-color: var(--color-secondary);
+}
+
+.menu-enlace {
+    font-size: 1.1rem;
+    color: var(--color-primary);
+}
+
+/* Página actual del menú: al estar escrita después de .menu-enlace
+   y tener la misma especificidad, la cascada aplica este color. */
+.activo {
+    color: var(--color-text);
+    background-color: var(--color-accent);
+}
+
+
+/* ---------- Contenido principal y secciones ---------- */
+
+.presentacion {
+    background-color: var(--color-secondary);
+}
+
+.destacado {
+    background-color: var(--color-white);
+}
+
+.llamado {
+    background-color: var(--color-accent);
+}
+
+.tarjeta {
+    background-color: var(--color-white);
+}
+
+.dato {
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+
+/* ---------- Imágenes y sus descripciones ---------- */
+
+figcaption {
+    font-size: 0.9rem;
+    color: var(--color-muted);
+}
+
+
+/* ---------- Enlaces y botones ---------- */
+
+.boton {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
+
+
+/* ---------- Pie de página ---------- */
+
+.pie {
+    font-size: 0.9rem;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
+
+.red-social {
+    color: var(--color-accent);
+}
